@@ -4,8 +4,10 @@
 Test whether two different AI systems make sound modelling decisions when projecting Singapore dementia cases, scored against our validated model and the MOH benchmark.
 
 ## Systems
-- AI 1: TBD (name + version)
-- AI 2: TBD (name + version)
+- AI 1: Claude (Anthropic), chat interface
+- AI 2: Gemini (Google), chat interface
+
+Exact model version is recorded in each run log.
 
 ## Controls
 - Fresh session every run, no memory or prior context

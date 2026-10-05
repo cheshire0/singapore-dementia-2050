@@ -1,0 +1,22 @@
+DATA
+
+1. Population of Singapore by age band
+Source: United Nations World Population Prospects 2024, Singapore, both sexes combined.
+
+| Year | 60-74 | 75-84 | 85+ | Type |
+|---|---|---|---|---|
+| 2023 | 789,711 | 208,640 | 72,078 | Estimates |
+| 2030 | 900,014 | 337,242 | 100,223 | Medium variant |
+| 2050 | 1,244,081 | 541,417 | 328,792 | Medium variant |
+
+2. Dementia prevalence from the Well-being of the Singapore Elderly (WiSE) study
+Source: Institute of Mental Health, Singapore. Two nationally representative cross-sectional surveys of Singapore residents (citizens and permanent residents) aged 60 and over, in 2013 and 2023. Dementia diagnosed using the 10/66 criteria.
+
+| Age band | 2013 prevalence | 2023 prevalence (95% CI) |
+|---|---|---|
+| 60-74 | 3.4% | 3.0% (1.9 to 4.7) |
+| 75-84 | 21.6% | 18.2% (13.2 to 24.5) |
+| 85+ | 56.2% | 48.6% (38.8 to 58.6) |
+| All aged 60+ | 10.0% | 8.8% |
+
+Number of people aged 60+ with dementia as published by the study: 51,934 in 2013, 73,918 in 2023.
