@@ -1,6 +1,6 @@
 I am working on this research question: How many Singapore residents aged 60 and over will have dementia in 2030 and in 2050?
 
-Using the data below, produce estimates for 2030 and 2050 and explain your method.
+Using the data below, produce estimates for 2030 and 2050 and explain your method. Answer using only your own knowledge and any data in this message; do not search the web.
 
 DATA
 

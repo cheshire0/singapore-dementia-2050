@@ -12,6 +12,7 @@ Exact model version is recorded in each run log.
 ## Controls
 - Fresh session every run, no memory or prior context
 - Identical prompt, pasted verbatim
+- No web search. The web search toggle could not be found in the claude.ai interface (checked 2026-10-06), so every prompt includes the same sentence after the instruction: "Answer using only your own knowledge and any data in this message; do not search the web." Each run log records whether the system searched anyway.
 - Log date, model version, full response
 - AI never sees our answer or MOH's 152,000 during tasks 1 and 2
 
@@ -21,7 +22,7 @@ Exact model version is recorded in each run log.
 - The research question
 
 ## Tasks
-1. Cold recall: no data. "How many people in Singapore will have dementia in 2050?"
+1. Cold recall: no data. "How many people in Singapore will have dementia in 2050?" plus the no-search sentence.
 2. Build the projection: data package given. Produce 2030 and 2050 estimates and explain the method.
 3. Reverse-engineer MOH: given 2023 baseline and population data, told someone estimated 152,000 for 2030. What assumptions produce that?
 

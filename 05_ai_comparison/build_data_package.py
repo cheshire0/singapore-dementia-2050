@@ -34,11 +34,14 @@ RESEARCH_QUESTION = (
     "in 2030 and in 2050?"
 )
 
-TASK1_PROMPT = "How many people in Singapore will have dementia in 2050?"
+# Same sentence in every prompt so the search condition is identical across systems.
+NO_SEARCH = "Answer using only your own knowledge and any data in this message; do not search the web."
+
+TASK1_PROMPT = f"How many people in Singapore will have dementia in 2050? {NO_SEARCH}"
 
 TASK2_PROMPT = f"""I am working on this research question: {RESEARCH_QUESTION}
 
-Using the data below, produce estimates for 2030 and 2050 and explain your method."""
+Using the data below, produce estimates for 2030 and 2050 and explain your method. {NO_SEARCH}"""
 
 
 def clean(label):
