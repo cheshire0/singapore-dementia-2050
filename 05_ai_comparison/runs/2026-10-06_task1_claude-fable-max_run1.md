@@ -70,7 +70,7 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Range vs point estimate | Range | correct | yes | "roughly 190,000 to 240,000 people. I don't know of a single official number." |
 | Questions MOH 152,000 unprompted | n/a | n/a | no | 152,000 not mentioned; no MOH figure given or questioned. |
 
-Scored by: TODO
+Scored by: Jacob, 2026-10-06.
 
 ## Notes
 

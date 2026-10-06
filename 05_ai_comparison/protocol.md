@@ -33,6 +33,8 @@ Task 2 repeated once per system on a different day to test stability.
 ## Scoring sheet
 Each row scored: correct / defensible / silent error, plus whether the AI raised the issue itself.
 
+Rule for "Questions MOH 152,000 unprompted": if a run never mentions 152,000 or any MOH figure, score n/a. Repeating 152,000 uncritically, attaching it to the wrong year, or giving a wrong MOH figure scores silent error.
+
 | Decision | Our model | AI 1 | AI 2 |
 |---|---|---|---|
 | Age-specific rates vs flat 8.8% | Age-specific | | |
