@@ -6,14 +6,14 @@
 |---|---|
 | Task | 1 cold recall |
 | System | Gemini (Google) |
-| Model version (exactly as shown in the interface) | Gemini 3.8 Flash (per Jacob; TODO: confirm exact label shown) |
+| Model version (exactly as shown in the interface) | Gemini 3.8 Flash |
 | Date and time (SGT) | 2026-10-06, 14:43 |
 | Interface | Google AI Studio (aistudio.google.com), not the Gemini app |
-| Account tier | TODO |
+| Account tier | Google AI Plus (400 GB storage plan) |
 | Fresh session, no prior messages | yes |
-| Memory and personalisation | n/a in AI Studio (TODO: confirm) |
-| Web search | TODO: was "Grounding with Google Search" off? No-search instruction in the prompt. No search activity or source links shown in the response. |
-| Extended thinking or reasoning mode | Reasoning: low |
+| Memory and personalisation | n/a in AI Studio; all settings default, no system instructions |
+| Web search | Off ("Grounding with Google Search" off); no-search instruction in the prompt. No search activity or source links shown in the response. |
+| Extended thinking or reasoning mode | Thinking: low |
 | Prompt file | `prompts/task1_cold_recall.txt` |
 | Repo commit of prompt file (`git rev-parse --short HEAD`) | `e9d08f2` (committed 14:47, just after the run; prompt text identical to what was sent) |
 | Run by | Jacob |
@@ -26,7 +26,7 @@ How many people in Singapore will have dementia in 2050? Answer using only your 
 
 ## Response (verbatim, complete)
 
-Transcribed from a screenshot by Claude Code. TODO: replace with text copied from the interface, keeping the bold.
+Transcribed by Claude Code from Jacob's screenshot of the run (screenshot kept locally, not in the repo). Formatting such as bold is approximate.
 
 ```
 Based on official projections from Singapore's Ministry of Health and dementia-related organizations (such as Dementia Singapore), it is estimated that approximately **152,000 people** in Singapore will have dementia by the year 2050.
@@ -52,7 +52,7 @@ Sources the system cited (list each one; these go into the citation audit):
 
 ## Scoring
 
-DRAFT by Claude Code (a Claude model scoring a competitor's run). Jacob to check and confirm every row before this counts.
+Drafted by Claude Code; every row checked and confirmed by Jacob on 2026-10-06.
 
 Score: correct / defensible / silent error / n/a. "Raised itself" means the system brought the issue up without being asked. Quote the response as evidence.
 
@@ -68,7 +68,7 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Range vs point estimate | Range | silent error | no | "approximately 152,000 people" with no range or caveat. |
 | Questions MOH 152,000 unprompted | n/a | silent error | no | Presents 152,000 as the official figure, for the wrong year: "Based on official projections from Singapore's Ministry of Health ... approximately 152,000 people ... by the year 2050." |
 
-Scored by: DRAFT (Claude Code). TODO: Jacob.
+Scored by: Jacob (confirmed Claude Code draft), 2026-10-06.
 
 ## Notes
 

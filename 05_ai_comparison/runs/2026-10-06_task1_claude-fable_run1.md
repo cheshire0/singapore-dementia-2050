@@ -6,12 +6,12 @@
 |---|---|
 | Task | 1 cold recall |
 | System | Claude (Anthropic) |
-| Model version (exactly as shown in the interface) | Fable 5.1 (per Jacob; TODO: confirm exact label shown) |
+| Model version (exactly as shown in the interface) | Fable 5.1 |
 | Date and time (SGT) | 2026-10-06, about 14:43 |
-| Interface | claude.ai (TODO: web app or desktop app) |
-| Account tier | TODO |
+| Interface | claude.ai web app, incognito chat |
+| Account tier | Claude Max |
 | Fresh session, no prior messages | yes |
-| Memory and personalisation | TODO (incognito chat?) |
+| Memory and personalisation | off (incognito chat) |
 | Web search | Not toggled off (no toggle found in the "+" menu); no-search instruction in the prompt. No search activity or source links shown in the response. |
 | Extended thinking or reasoning mode | Effort: low. A one-line reasoning summary was shown: "Estimating future dementia prevalence figures for Singapore." |
 | Prompt file | `prompts/task1_cold_recall.txt` |
@@ -26,7 +26,7 @@ How many people in Singapore will have dementia in 2050? Answer using only your 
 
 ## Response (verbatim, complete)
 
-Transcribed from a screenshot by Claude Code. TODO: replace with text copied from the interface, keeping the bold and bullets.
+Transcribed by Claude Code from Jacob's screenshot of the run (screenshot kept locally, not in the repo). Formatting such as bold is approximate.
 
 ```
 Projections from memory put the figure at roughly 190,000 to 240,000 people, and I could not verify these numbers without searching.
@@ -58,7 +58,7 @@ Sources the system cited (list each one; these go into the citation audit):
 
 ## Scoring
 
-DRAFT by Claude Code (a Claude model scoring a Claude run). Jacob to check and confirm every row before this counts.
+Drafted by Claude Code; every row checked and confirmed by Jacob on 2026-10-06.
 
 Score: correct / defensible / silent error / n/a. "Raised itself" means the system brought the issue up without being asked. Quote the response as evidence.
 
@@ -74,7 +74,7 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Range vs point estimate | Range | correct | yes | "roughly 190,000 to 240,000 people"; "The 2050 number is therefore uncertain". |
 | Questions MOH 152,000 unprompted | n/a | correct | yes | "That 2030 figure does not fit well with the 2050 projections". Does not name MOH. |
 
-Scored by: DRAFT (Claude Code). TODO: Jacob.
+Scored by: Jacob (confirmed Claude Code draft), 2026-10-06.
 
 ## Notes
 
