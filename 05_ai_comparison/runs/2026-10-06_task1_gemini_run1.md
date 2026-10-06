@@ -72,6 +72,8 @@ Scored by: Jacob, 2026-10-06.
 
 Rubric score (`scoring_rubric.md` v1.1): 25.0 (D 12.5 of 50 after the floor of 1 correct core row; F dropped). Version 1 gave 0.0: its one correct row was cancelled by two silent errors.
 
+Why this score: Only one row earned credit: it describes people living with dementia (prevalence, not incidence). It gave a single figure, "approximately 152,000" for 2050, with no range or caveat (silent error), and that figure is MOH's 2030 projection attached to the wrong year (silent error on the MOH row). It did not address age structure or whether prevalence might change. Its one checkable recalled claim was wrong, too few for the facts component, so the score rests on 12.5 decision points out of 50.
+
 ## Notes
 
 - Response length: 56 words.

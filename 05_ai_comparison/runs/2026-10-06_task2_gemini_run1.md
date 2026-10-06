@@ -111,6 +111,8 @@ Row "Headline figure on the official population" added 2026-10-06 with rubric v1
 
 Rubric score (`scoring_rubric.md` v1.1, unchanged from v1): 56.9 (D 23.3 of 60, A 25 of 25, F dropped: no recalled claims).
 
+Why this score: Arithmetic perfect, and its headline (137,087 and 295,653) is identical to the team's constant-rates scenario. Correct on age-specific rates and on residents vs total population. Lost most points on two silent errors: it treats the 2013-2023 decline as real although the CIs it was given include the 2013 values, and it never checks its method against the published 73,918. Half credit on prevalence trend (one scenario only), range (adds every band's CI bound and calls it a 95% CI) and headline (official population, but without considering the mismatch). Diagnostic criteria not addressed.
+
 ## Notes
 
 - Response length: 403 words (tokens containing a letter or digit; markdown symbols excluded).

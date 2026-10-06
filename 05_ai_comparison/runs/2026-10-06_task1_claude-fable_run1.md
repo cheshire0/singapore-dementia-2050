@@ -78,6 +78,8 @@ Scored by: Jacob, 2026-10-06.
 
 Rubric score (`scoring_rubric.md` v1.1): 87.5 (D 37.5 of 50 after the floor of 3 correct core rows, F 50 of 50: 5 of 5). Version 1 gave 81.3.
 
+Why this score: Correct on prevalence trend (notes the fall from 10% to 8.8%), prevalence vs incidence and range (190,000 to 240,000). No credit on age structure (not addressed). Treating the 2013-2023 fall as real is a silent error, but under the v1.1 floor it cannot cancel the three correct rows. All 5 checkable recalled figures were correct (ADI 2014 241,000; WiSE 74,000, 8.8%, 10%; 152,000 for 2030); the ADI 2006 187,000 could not be checked against the primary source.
+
 ## Notes
 
 - Not part of the main pairing (Sonnet 5.5 vs Gemini 3.8 Flash). Kept as an extra top-tier data point.

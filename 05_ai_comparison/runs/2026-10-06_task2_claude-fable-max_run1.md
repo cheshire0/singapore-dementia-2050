@@ -141,6 +141,8 @@ Row "Headline figure on the official population" added 2026-10-06 with rubric v1
 
 Rubric score (`scoring_rubric.md` v1.1): 93.3 (D 53.3 of 60, A 25 of 25, F 15 of 15: 4 of 4).
 
+Why this score: Correct on every core row except diagnostic criteria, which no run addressed; that is the only loss (6.7 points). Recommends the unscaled figures after weighing the 73,918 mismatch (our assumption 3), gives residents-only figures, three scenarios and an interval treating band errors as independent. Arithmetic perfect and all 4 recalled claims correct.
+
 ## Notes
 
 - Response length: 637 words (tokens containing a letter or digit; markdown symbols excluded).

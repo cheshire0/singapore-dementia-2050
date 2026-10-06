@@ -115,6 +115,8 @@ Row "Headline figure on the official population" added 2026-10-06 with rubric v1
 
 Rubric score (`scoring_rubric.md` v1.1, unchanged from v1): 88.2 (D 50.0 of 60, A 25 of 25, F dropped: 1 claim).
 
+Why this score: Correct on seven of nine core rows: age-specific rates, residents vs total, a declining scenario, checks the decline against the CIs, explains the 73,918 mismatch as a smaller survey base, prevalence vs incidence, and a range with its limitation stated. Lost points only for recommending the rescaled figures (half credit on row 10, since it says they "may be too low") and for not addressing diagnostic criteria. Arithmetic perfect; facts component dropped (one recalled claim, correct).
+
 ## Notes
 
 - Response length: 468 words (tokens containing a letter or digit; markdown symbols excluded).

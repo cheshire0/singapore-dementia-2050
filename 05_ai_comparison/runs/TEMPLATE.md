@@ -67,6 +67,8 @@ Scored by:
 
 Rubric score (`scoring_rubric.md`): 
 
+Why this score: two or three sentences naming what earned and lost the most points.
+
 ## Notes
 
 Anything that deviated from the protocol, follow-up messages sent (these should be none for tasks 1 and 2), or anything odd about the run.

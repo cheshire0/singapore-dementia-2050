@@ -102,6 +102,8 @@ Row "Headline figure on the official population" added 2026-10-06 with rubric v1
 
 Rubric score (`scoring_rubric.md` v1.1, unchanged from v1): 62.0 (D 30.0 of 60, A 22.7 of 25, F dropped: no recalled claims).
 
+Why this score: Credit for age-specific rates, prevalence vs incidence and ranges with stated limits. It noticed the mismatch with 73,918 and raised the possibility that the decline is sampling noise, but put the gap down to non-residents or coverage (half credit on rows 2 and 5) and rescaled its headline to WiSE's count without saying the result is probably too low (silent error on row 10). One scenario only, decline not checked against the CIs, diagnostic criteria not addressed. 2 of 22 derived numbers wrong (85+ share of 2050 cases; "roughly double" by 2030).
+
 ## Notes
 
 - Response length: 369 words (tokens containing a letter or digit; markdown symbols excluded).

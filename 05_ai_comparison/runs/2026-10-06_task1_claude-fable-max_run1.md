@@ -76,6 +76,8 @@ Scored by: Jacob, 2026-10-06.
 
 Rubric score (`scoring_rubric.md` v1.1): 87.5 (D 37.5 of 50, F 50 of 50: 4 of 4).
 
+Why this score: Correct on prevalence trend, prevalence vs incidence and range (190,000 to 240,000); half credit on age structure (reasons from the growing 80+ share but names no method). Treating the 2013-2023 fall as real is a silent error that cancels the half credit, leaving 3 units. All 4 checkable recalled figures were correct (ADI 2014 241,000; WiSE 74,000, 8.8%, 10%); the ADI 2006 187,000 could not be checked against the primary source.
+
 ## Notes
 
 - Same model as the Fable 5.1 low-effort run (`2026-10-06_task1_claude-fable_run1.md`), at max effort. Extra data point on whether reasoning effort changes the answer; not part of the main pairing (Sonnet 5.5 vs Gemini 3.8 Flash).

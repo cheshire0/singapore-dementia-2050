@@ -79,6 +79,8 @@ Scored by: Jacob, 2026-10-06.
 
 Rubric score (`scoring_rubric.md` v1.1): 51.3 (D 31.3 of 50, F 20 of 50: 2 of 5).
 
+Why this score: Credit for prevalence vs incidence and for giving a caveated range (150,000 to 200,000). Half credit on age structure (says the answer depends on age-specific rates but reasons with a flat 10%) and on prevalence trend (names a change in rates as an uncertainty but does not know about the 2023 survey). Lost points for attributing a wrong figure to MOH (80,000 by 2030) and on recalled facts: 3 of 5 checkable claims wrong (2013 count of 40,000, MOH 80,000, residents 65+ in the mid-2020s). Its knowledge appears to predate WiSE 2023.
+
 ## Notes
 
 - Response length: 209 words.
