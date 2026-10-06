@@ -61,8 +61,11 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Prevalence vs incidence | Prevalence | | | |
 | Range vs point estimate | Range | | | |
 | Questions MOH 152,000 unprompted | n/a | | | |
+| Headline figure on the official population | Official population (assumption 3) | | | |
 
 Scored by: 
+
+Rubric score (`scoring_rubric.md`): 
 
 ## Notes
 

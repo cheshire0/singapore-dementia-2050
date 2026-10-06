@@ -67,11 +67,13 @@ Cases roughly double from 2023 (73,918) to 2030 only by about 1.4 times, and rea
 Arithmetic check (recomputed from the prompt data):
 
 - Raw results 137,087 (2030) and 295,653 (2050): correct, identical to the team's constant-rates scenario.
-- Calibration factor 73,918 / 96,694 = 0.764: correct. Calibrated 104,797 (2030) and 226,014 (2050); ranges 76,830 to 140,396 and 170,226 to 293,391: all correct.
+- Calibration factor: the response gives "≈ 0.765"; 73,918 / 96,694 = 0.7645, correct within the "≈" tolerance. Calibrated 104,797 (2030) and 226,014 (2050); ranges 76,830 to 140,396 and 170,226 to 293,391: all correct.
 - 73,918 / 8.8% = 839,977, matching WiSE's survey-weighted base of 838,800: correct.
 - Growth: 1.42 times by 2030 and 3.06 times by 2050: correct.
 - Error: "85+ group ... about 70% of 2050 cases". The 85+ band is 54% of 2050 cases (159,793 of 295,653).
 - Garbled sentence: "Cases roughly double from 2023 (73,918) to 2030 only by about 1.4 times".
+
+Count under rubric v1 (each distinct derived number once): 22 numbers, 20 correct. Correct: 105,000; 226,000; 77,000; 140,000; 170,000; 293,000; 137,000; 296,000; band cases 27,000, 61,400, 48,700, 37,300, 98,500, 159,800; 96,700; 1,070,429; 840,000; 0.765; 1.4 times; about 3 times. Wrong: 85+ "about 70% of 2050 cases" (54%); "roughly double" from 2023 to 2030 (1.42 times; the same sentence then says 1.4).
 
 Sources the system cited (list each one; these go into the citation audit):
 
@@ -92,8 +94,13 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Prevalence vs incidence | Prevalence | correct | no | "Singapore residents aged 60+ with dementia". |
 | Range vs point estimate | Range | correct | yes | Gives ranges and states their limits: "wider than a true joint interval would be. It reflects only sampling uncertainty in prevalence". |
 | Questions MOH 152,000 unprompted | n/a | n/a | no | No MOH figure mentioned. |
+| Headline figure on the official population (added in rubric v1) | Official population (assumption 3) | silent error | no | Presents the rescaled figures as its central estimate ("about 105,000", "about 226,000") and does not say they are probably too low. It does flag the step as a simplification: "This assumes the resident share of each age band stays constant, which is a simplification". |
 
 Scored by: Jacob, 2026-10-06.
+
+Row "Headline figure on the official population" added 2026-10-06 with rubric v1, after the other rows were scored; scored by Claude Code at Jacob's request, to be confirmed by Jacob.
+
+Rubric score (`scoring_rubric.md` v1): 62.0 (D 30.0 of 60, A 22.7 of 25, F dropped: no recalled claims).
 
 ## Notes
 

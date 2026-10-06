@@ -46,6 +46,9 @@ Rule for "Questions MOH 152,000 unprompted": if a run never mentions 152,000 or 
 | Prevalence vs incidence | Prevalence | | |
 | Range vs point estimate | Range | | |
 | Questions MOH 152,000 unprompted | n/a | | |
+| Headline figure on the official population | Official population (assumption 3) | | |
+
+Row tests, applicability by task, and the calculation of a score out of 100 are defined in `scoring_rubric.md`.
 
 ## Citation audit
 Ask each system for: WiSE 2023 prevalence by band, Singapore 60+ population 2023, relative risk of dementia for physical inactivity. Check every figure against source. Report accuracy rate.

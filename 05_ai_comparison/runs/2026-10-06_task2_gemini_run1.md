@@ -103,8 +103,13 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Prevalence vs incidence | Prevalence | correct | no | "people aged 60 and over living with dementia". |
 | Range vs point estimate | Range | defensible | yes | Gives ranges, but builds them by adding every band's lower (or upper) CI bound and labels the result a "95% Confidence Interval". That assumes all bands err in the same direction at once, so the interval is wider than a true 95% CI. Also mixes sampling uncertainty with trend: a continued decline "could be closer to the lower confidence bound". |
 | Questions MOH 152,000 unprompted | n/a | n/a | no | No MOH figure mentioned. |
+| Headline figure on the official population (added in rubric v1) | Official population (assumption 3) | defensible | no | Headline 137,087 and 295,653 are on the official (UN) population, but it never compares its method with the published 73,918, so the choice was not made after considering the mismatch. |
 
 Scored by: Jacob, 2026-10-06.
+
+Row "Headline figure on the official population" added 2026-10-06 with rubric v1, after the other rows were scored; scored by Claude Code at Jacob's request, to be confirmed by Jacob.
+
+Rubric score (`scoring_rubric.md` v1): 56.9 (D 23.3 of 60, A 25 of 25, F dropped: no recalled claims).
 
 ## Notes
 
