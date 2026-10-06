@@ -113,7 +113,7 @@ Scored by: draft by Claude Code; every row confirmed by Jacob, 2026-10-06.
 
 Row "Headline figure on the official population" added 2026-10-06 with rubric v1, after the other rows were scored; scored by Claude Code at Jacob's request, to be confirmed by Jacob.
 
-Rubric score (`scoring_rubric.md` v1): 88.2 (D 50.0 of 60, A 25 of 25, F dropped: 1 claim).
+Rubric score (`scoring_rubric.md` v1.1, unchanged from v1): 88.2 (D 50.0 of 60, A 25 of 25, F dropped: 1 claim).
 
 ## Notes
 

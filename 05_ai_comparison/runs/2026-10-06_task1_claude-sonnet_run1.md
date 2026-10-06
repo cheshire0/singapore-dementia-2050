@@ -52,10 +52,12 @@ No reasoning, web search or code shown.
 
 Sources the system cited (list each one; these go into the citation audit):
 
-- WiSE study, published around 2015: about 10% of residents 60+. Prevalence matches WiSE 2013 (10.0%); the paper is Subramaniam et al., J Alzheimers Dis 2015. "Roughly 40,000 people" is wrong: WiSE published 51,934 for 2013.
+- WiSE study, published around 2015: about 10% of residents 60+. Correct (two claims: published around 2015, about 10%): the paper is Subramaniam et al., J Alzheimers Dis 2015; prevalence 10.0%. "Roughly 40,000 people" is wrong: WiSE published 51,934 for 2013.
 - MOH and IMH, "about 80,000 people with dementia by 2030": wrong. MOH's published 2030 figure is 152,000 (written parliamentary answer, 4 November 2025). Possibly a confusion with an "around 82,000 in 2018" figure seen in secondary sources (unverified).
-- Residents 65+: "roughly 1.3 to 1.5 million by 2050, up from around 600,000 to 700,000 in the mid-2020s". Unverified for residents. For comparison, UN WPP 2024 (total population, including non-residents) gives 834,294 aged 65+ in 2025 and 1,626,891 in 2050 (computed from `01_demographics/singapore_population_by_age_1950_2100.csv`).
-- "Alzheimer's Disease Association Singapore": the organisation renamed itself Dementia Singapore (unverified date; check).
+- Residents 65+: "roughly 1.3 to 1.5 million by 2050, up from around 600,000 to 700,000 in the mid-2020s". Mid-2020s part wrong: SingStat resident 65+ was 717,843 (2023), 753,905 (2024) and 789,576 (2025), summed from `01_demographics/Cleaned_residents_by_age_and_dwelling.csv`. 2050 part uncheckable (SingStat publishes no resident age projections). For comparison, UN WPP 2024 (total population, including non-residents) gives 834,294 aged 65+ in 2025 and 1,626,891 in 2050 (computed from `01_demographics/singapore_population_by_age_1950_2100.csv`).
+- "Alzheimer's Disease Association Singapore": the organisation renamed itself Dementia Singapore (unverified date). No figure; not counted in F.
+
+F tally (rubric v1.1): 2 correct (published around 2015; 10%), 3 wrong (40,000; MOH 80,000 by 2030; 65+ in the mid-2020s), 1 uncheckable (65+ in 2050).
 
 ## Scoring
 
@@ -74,6 +76,8 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Questions MOH 152,000 unprompted | n/a | silent error | no | Does not mention 152,000; attributes a wrong 2030 figure to MOH: "projections of about 80,000 people with dementia by 2030". |
 
 Scored by: Jacob, 2026-10-06.
+
+Rubric score (`scoring_rubric.md` v1.1): 51.3 (D 31.3 of 50, F 20 of 50: 2 of 5).
 
 ## Notes
 

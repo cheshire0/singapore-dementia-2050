@@ -113,8 +113,10 @@ Arithmetic check (recomputed from the prompt data): every figure is correct.
 Sources the system cited (list each one; these go into the citation audit):
 
 - Recalled: about 1.0 million residents aged 60+ in mid-2023, roughly 5% below the UN figure (flagged as unverified by the system). SingStat gives 1,011,631 for 2023 (summed from `01_demographics/Cleaned_residents_by_age_and_dwelling.csv`), 5.5% below the UN figure: correct.
-- Recalled: "The projection commonly cited in Singapore before the 2023 survey was about 152,000 by 2030". The figure and year match MOH's 152,000 for 2030 (written parliamentary answer, 4 November 2025). That it was cited before the 2023 survey: unverified (believed first reported in 2021; primary source not yet found). MOH not named.
-- Inference, flagged as such: WiSE's count is weighted to the resident population at an earlier date. Unverified; needs the WiSE 2023 methods section. See notes.
+- Recalled: "The projection commonly cited in Singapore before the 2023 survey was about 152,000 by 2030". The figure and year match MOH's 152,000 for 2030 (written parliamentary answer, 4 November 2025). That it was cited before the 2023 survey: correct. An MOH speech on 9 June 2023 gives "152,000 by 2030" alongside "1 in 10 seniors aged 60 and above" (the WiSE 2013 rate), before WiSE 2023 results were released (IMH, 28 August 2024). https://www.moh.gov.sg/newsroom/speech-by-mdm-rahayu-mahzam-senior-parliamentary-secretary-ministry-of-health-at-the-launch-of-inclusive-customer-experience-making-a-difference-for-persons-living-with-dementia-training-programme-on-9-june-2023/ . A 2021 MOH primary source was not found. MOH not named.
+- Inference, flagged as such: WiSE's count is weighted to the resident population at an earlier date. Not supported: the paper says 73,918 comes from "Translating this figure into Singapore's population in 2022" (Subramaniam et al. 2025, section 3.1). Not counted in F (an inference, not a recalled fact). See notes.
+
+F tally (rubric v1.1): 4 correct (about 1.0 million residents 60+ in 2023; roughly 5% below the UN figure; 152,000 for 2030 commonly cited; cited before the 2023 survey), 0 wrong.
 
 ## Scoring
 
@@ -137,7 +139,7 @@ Scored by: draft by Claude Code; every row confirmed by Jacob, 2026-10-06.
 
 Row "Headline figure on the official population" added 2026-10-06 with rubric v1, after the other rows were scored; scored by Claude Code at Jacob's request, to be confirmed by Jacob.
 
-Rubric score (`scoring_rubric.md` v1): 92.2, provisional (D 53.3 of 60, A 25 of 25, F dropped: 2 checkable claims, 1 unchecked). 93.3 if the unchecked claim is verified and correct.
+Rubric score (`scoring_rubric.md` v1.1): 93.3 (D 53.3 of 60, A 25 of 25, F 15 of 15: 4 of 4).
 
 ## Notes
 
@@ -146,5 +148,5 @@ Rubric score (`scoring_rubric.md` v1): 92.2, provisional (D 53.3 of 60, A 25 of 
 - Differences from Fable low effort (same prompt, same day): low effort recommended the figures rescaled to WiSE (105,000 and 226,000); max effort recommends the unscaled figures (137,000 and 296,000), the same choice as our model. Max effort also adds residents-only figures, a high scenario, an interval that treats band errors as independent (Gemini summed every band's bounds), and brings up 152,000 unprompted.
 - Brought up a 2030 figure of 152,000 from memory in Task 2, although the prompt contains no MOH figure. The protocol only controls what we show the system, so this is not a protocol breach, but it means the system's projection was not blind to that figure.
 - Lead on the open MOH question: 2013 WiSE band rates x UN 2030 population x 0.95 = 151,782. This is the system's hypothesis, not evidence of MOH's method; it could be coincidence. Against it: the same method gives about 106,800 for 2023 (2013 rates on UN 2023 x 0.95), not MOH's 74,000. Check against the primary source for 152,000.
-- Lead on the WiSE base: the survey-weighted bases (838,800 in 2023, 517,369 in 2013) are close to SingStat resident 60+ about four to five years earlier (2018: 819,542; 2019: 860,508; 2009: 498,269; 2010: 528,684). Consistent with the system's "earlier date" inference but not proof. Check the WiSE methods sections for the weighting reference population.
-- In the trial version of the rubric this tied with Fable low effort at 92.5, because the rescaling choice was unscored. Rubric v1 added the headline-figure row for that reason; v1 scores are 92.2 (max) and 88.2 (low).
+- WiSE base (checked 2026-10-06): the paper states the 73,918 refers to "Singapore's population in 2022" and that weights were "post-stratified to align with the age and ethnicity distributions of Singapore's older adult resident population"; it gives no source or year for the totals. Its base (838,800) is 13.2% below SingStat resident 60+ for 2022 (966,140); the 2013 base (517,369) is 12.5% below SingStat 2012 (590,980). So the system's "earlier date" inference is not supported, and an earlier draft of this note (bases match SingStat four to five years earlier) was a coincidence of levels, not evidence. The cause of the roughly 13% gap is unknown.
+- In the trial version of the rubric this tied with Fable low effort at 92.5, because the rescaling choice was unscored. Rubric v1 added the headline-figure row for that reason; v1.1 scores are 93.3 (max) and 88.2 (low).

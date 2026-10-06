@@ -51,10 +51,12 @@ Reasoning shown: a single summary line, "Estimating future dementia prevalence f
 
 Sources the system cited (list each one; these go into the citation audit):
 
-- Alzheimer's Disease International, 2014 Asia Pacific report: about 241,000 for 2050. Unverified.
-- Alzheimer's Disease International, 2006 regional report: about 187,000 for 2050. Unverified. Possible source of Zoe's unsourced 187,000.
-- WiSE 2 (2023): about 74,000 aged 60+, 8.8%; 10% in 2013. Consistent with WiSE's published 73,918, 8.8% and 10.0%.
-- "Commonly cited projection for 2030 is about 152,000": no source named. The figure matches MOH's 152,000 for 2030.
+- Alzheimer's Disease International, 2014 Asia Pacific report: about 241,000 for 2050. Correct: ADI, Dementia in the Asia Pacific Region (November 2014), Table 1.1, Singapore row: 45,000 (2015), 103,000 (2030), 241,000 (2050), https://www.alzint.org/u/Dementia-Asia-Pacific-2014.pdf.
+- Alzheimer's Disease International, 2006 regional report: about 187,000 for 2050. Primary report (Access Economics for the Asia Pacific members of ADI, 2006, "Dementia in the Asia Pacific Region: The Epidemic is Here") could not be obtained: links dead, Wayback Machine rate-limited (checked 2026-10-06). Secondary support: Lee and Krishnan, Ann Acad Med Singapore 2010;39(7):505, cite that report for "52 600 in 2020 and 187 000 by 2050" (described there as Alzheimer's disease prevalence). Verdict: uncheckable, excluded from F. Likely source of Zoe's unsourced 187,000. Its claim that 241,000 is "the figure I recall being cited most often": uncheckable.
+- WiSE 2 (2023): about 74,000 aged 60+, 8.8%; 10% in 2013. Correct (three claims): WiSE published 73,918, 8.8% and 10.0% (Subramaniam et al. 2025, Table 2).
+- "Commonly cited projection for 2030 is about 152,000": no source named. Correct: matches MOH's 152,000 for 2030 (written parliamentary answer, 4 November 2025; also MOH speech, 9 June 2023).
+
+F tally (rubric v1.1): 5 correct, 0 wrong, 2 uncheckable.
 
 ## Scoring
 
@@ -73,6 +75,8 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Questions MOH 152,000 unprompted | n/a | correct | yes | "That 2030 figure does not fit well with the 2050 projections". Does not name MOH. |
 
 Scored by: Jacob, 2026-10-06.
+
+Rubric score (`scoring_rubric.md` v1.1): 87.5 (D 37.5 of 50 after the floor of 3 correct core rows, F 50 of 50: 5 of 5). Version 1 gave 81.3.
 
 ## Notes
 

@@ -50,9 +50,11 @@ Reasoning shown: a collapsed summary line, "Projecting growth in elderly dementi
 
 Sources the system cited (list each one; these go into the citation audit):
 
-- Alzheimer's Disease International, 2006 Asia Pacific report: about 187,000 for 2050, "the one Singapore sources have quoted most often". Unverified. Possible source of Zoe's unsourced 187,000.
-- Alzheimer's Disease International, 2014 update: about 241,000 for 2050. Unverified.
-- WiSE 2023: 8.8% of residents 60+, about 74,000; 10% in 2013. Consistent with WiSE's published 73,918, 8.8% and 10.0%.
+- Alzheimer's Disease International, 2006 Asia Pacific report: about 187,000 for 2050, "the one Singapore sources have quoted most often". Primary report (Access Economics for the Asia Pacific members of ADI, 2006, "Dementia in the Asia Pacific Region: The Epidemic is Here") could not be obtained: links dead, Wayback Machine rate-limited (checked 2026-10-06). Secondary support: Lee and Krishnan, Ann Acad Med Singapore 2010;39(7):505, cite that report for "52 600 in 2020 and 187 000 by 2050" (described there as Alzheimer's disease prevalence). Verdict: uncheckable, excluded from F. "Quoted most often": uncheckable. Likely source of Zoe's unsourced 187,000.
+- Alzheimer's Disease International, 2014 update: about 241,000 for 2050. Correct: ADI, Dementia in the Asia Pacific Region (November 2014), Table 1.1, Singapore row: 45,000 (2015), 103,000 (2030), 241,000 (2050), https://www.alzint.org/u/Dementia-Asia-Pacific-2014.pdf.
+- WiSE 2023: 8.8% of residents 60+, about 74,000; 10% in 2013. Correct (three claims): WiSE published 73,918, 8.8% and 10.0% (Subramaniam et al. 2025, Table 2).
+
+F tally (rubric v1.1): 4 correct, 0 wrong, 2 uncheckable.
 
 ## Scoring
 
@@ -71,6 +73,8 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Questions MOH 152,000 unprompted | n/a | n/a | no | 152,000 not mentioned; no MOH figure given or questioned. |
 
 Scored by: Jacob, 2026-10-06.
+
+Rubric score (`scoring_rubric.md` v1.1): 87.5 (D 37.5 of 50, F 50 of 50: 4 of 4).
 
 ## Notes
 

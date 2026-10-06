@@ -1,13 +1,13 @@
-# AI comparison scoring rubric (draft)
+# AI comparison scoring rubric
 
-Status: version 1, 2026-10-06. Not yet reviewed by the rest of the group. Frozen from Task 2 run 2 onward: do not change it while scoring. Any later change must be logged under "Change log" with its date, and every run rescored.
+Status: version 1.1, 2026-10-06. Not yet reviewed by the rest of the group. Frozen from Task 2 run 2 onward: do not change it while scoring. Any later change must be logged under "Change log" with its date, and every run rescored.
 
 ## Principles
 
 1. Every point comes from an observable test on the response text or a recomputation, never from an overall impression.
 2. Which rows apply to which task is fixed in advance (table below), not decided per response. This removes the per-response "n/a" judgement.
 3. Weights are equal within each component, so no row is weighted up or down to favour a system.
-4. A confident error scores below saying nothing. Silence earns 0; a silent error earns -0.5.
+4. A confident error scores below saying nothing. Silence earns 0; a silent error earns -0.5. Penalties can cancel partial (defensible) credit and each other, but never a fully correct row.
 5. Every score needs a quote (decisions) or a recomputed value or source reference (numbers and facts) in the run log.
 
 ## Components and weights
@@ -56,7 +56,9 @@ Row 10 is not scored in Task 1 because there is no published count to rescale to
 
 Reason for the Task 1 split: with no data, a system cannot be expected to know about the survey base, the CIs or the population coverage, so only rows any careful answer must address are core.
 
-D score = component weight x max(0, sum of units) / (number of core rows)
+D score = component weight x max(sum of units, number of correct core rows) / (number of core rows)
+
+The floor means silent errors (on core or penalty-only rows) can never take D below the credit from rows the system got fully right. Without it, a response with one correct row and two silent errors scores the same as one that gets nothing right.
 
 ### Row tests
 
@@ -163,6 +165,26 @@ Before reporting, a second team member scores at least two runs blind (without s
   - F component needs at least three checkable claims.
   - Arithmetic tolerance extended to "≈"; self-contradictory sentences checked figure by figure.
   - Disclose in the report that row 10 was added after seeing trial scores, and why.
+- 2026-10-06, version 1.1. Changed after scoring Task 1, before Task 2 run 2 or Task 3 were run:
+  - D floor changed from 0 to the number of correct core rows. Under version 1, Gemini 3.8 Flash's Task 1 run scored 0: its one correct row (prevalence vs incidence) was cancelled by two silent errors (range, MOH), which read as "nothing right". Effects: Gemini Task 1 from 0.0 to 25.0; Fable 5.1 low Task 1 from 81.3 to 87.5 (its row 4 silent error no longer offsets its three correct rows). No Task 2 score changes.
+  - Disclose this change in the report alongside row 10.
+
+## Scores: Task 1
+
+Core rows 1, 3, 7, 8 (4 rows; D of 50). Penalty-only rows count only when triggered. All row scores confirmed by Jacob. Recalled claims checked 2026-10-06; verdicts and sources in each run log.
+
+| Row | Gemini 3.8 Flash | Sonnet 5.5 | Fable 5.1 low (extra) | Fable 5.1 max (extra) |
+|---|---|---|---|---|
+| 1 | 0 | 0.5 | 0 | 0.5 |
+| 3 | 0 | 0.5 | 1 | 1 |
+| 7 | 1 | 1 | 1 | 1 |
+| 8 | -0.5 | 1 | 1 | 1 |
+| Penalty rows triggered | 9: -0.5 | 9: -0.5 | 4: -0.5 | 4: -0.5 |
+| Sum of units | 0.0 | 2.5 | 2.5 | 3.0 |
+| Correct core rows (floor) | 1 | 2 | 3 | 3 |
+| D (of 50) | 12.5 | 31.3 | 37.5 | 37.5 |
+| F (of 50) | dropped (1 checkable claim: 0 of 1) | 20.0 (2 of 5) | 50.0 (5 of 5) | 50.0 (4 of 4) |
+| Run score | 12.5 / 50 = 25.0 | 51.3 / 100 = 51.3 | 87.5 | 87.5 |
 
 ## Scores: Task 2 run 1
 
@@ -182,9 +204,9 @@ Decision units: correct 1, defensible 0.5, not addressed 0, silent error -0.5. R
 | Sum / 9 | 3.5 | 4.5 | 7.5 | 8.0 |
 | D (of 60) | 23.3 | 30.0 | 50.0 | 53.3 |
 | A (of 25) | 25.0 (all correct) | 22.7 (20 of 22) | 25.0 (all correct) | 25.0 (all correct) |
-| F (of 15) | dropped (0 claims) | dropped (0 claims) | dropped (1 claim) | dropped (2 checkable, 1 unchecked) |
-| Run score | 48.3 / 85 = 56.9 | 52.7 / 85 = 62.0 | 75.0 / 85 = 88.2 | 78.3 / 85 = 92.2 |
+| F (of 15) | dropped (0 claims) | dropped (0 claims) | dropped (1 claim) | 15.0 (4 of 4) |
+| Run score | 48.3 / 85 = 56.9 | 52.7 / 85 = 62.0 | 75.0 / 85 = 88.2 | 93.3 / 100 = 93.3 |
 
-Fable 5.1 max is provisional: if its unchecked claim (152,000 "commonly cited ... before the 2023 survey") is verified, F applies with three claims and the score becomes 93.3 if all three are correct.
+The version 1.1 floor changes no Task 2 score. Fable 5.1 max's last unchecked claim (152,000 "commonly cited ... before the 2023 survey") was verified on 2026-10-06, so its F component now applies (it was 92.2, provisional, before the check).
 
 For comparison, the trial version (8 core rows, F with any number of claims) gave Gemini 55.9, Sonnet 71.4, Fable low 92.5, Fable max 92.5.

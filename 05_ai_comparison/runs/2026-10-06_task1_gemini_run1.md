@@ -48,7 +48,9 @@ Sources the system cited (list each one; these go into the citation audit):
 
 - Singapore Ministry of Health, "official projections": 152,000 by 2050. MOH's published 152,000 is for 2030, not 2050 (MOH written parliamentary answer, 4 November 2025). Wrong year.
 - Dementia Singapore: no specific document named.
-- About 100,000 with dementia around 2020: no source named. Unverified; well above WiSE's 73,918 for 2023.
+- About 100,000 with dementia around 2020: no source named. Uncheckable: no primary source measured 2020. Well above WiSE's 73,918 for 2023.
+
+F tally (rubric v1.1): 0 correct, 1 wrong (152,000 by 2050), 1 uncheckable. Fewer than three checkable claims, so F is dropped.
 
 ## Scoring
 
@@ -67,6 +69,8 @@ Score: correct / defensible / silent error / n/a. "Raised itself" means the syst
 | Questions MOH 152,000 unprompted | n/a | silent error | no | Presents 152,000 as the official figure, for the wrong year: "Based on official projections from Singapore's Ministry of Health ... approximately 152,000 people ... by the year 2050." |
 
 Scored by: Jacob, 2026-10-06.
+
+Rubric score (`scoring_rubric.md` v1.1): 25.0 (D 12.5 of 50 after the floor of 1 correct core row; F dropped). Version 1 gave 0.0: its one correct row was cancelled by two silent errors.
 
 ## Notes
 
