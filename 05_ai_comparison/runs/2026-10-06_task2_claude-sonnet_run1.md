@@ -26,8 +26,6 @@ Contents of `prompts/task2_build_projection.txt` at `e9d08f2`, pasted in full (2
 
 ## Response (verbatim, complete)
 
-Transcribed from the response text pasted by Jacob. Formatting such as bold is approximate.
-
 ```
 **Estimates (Singapore residents aged 60+ with dementia)**
 
