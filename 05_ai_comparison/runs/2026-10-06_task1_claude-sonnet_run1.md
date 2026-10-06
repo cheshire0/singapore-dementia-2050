@@ -26,8 +26,6 @@ How many people in Singapore will have dementia in 2050? Answer using only your 
 
 ## Response (verbatim, complete)
 
-Transcribed from a screenshot of the run (screenshot kept locally, not in the repo). Formatting such as bold is approximate.
-
 ```
 I can't give a single exact figure, but the best-known projections put it at roughly 150,000 to 200,000 people with dementia in Singapore by 2050.
 
