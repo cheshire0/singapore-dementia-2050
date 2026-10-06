@@ -28,8 +28,6 @@ Contents of `prompts/task2_build_projection.txt` at `e9d08f2`, pasted in full (2
 
 ## Response (verbatim, complete)
 
-Transcribed from the response text pasted by Jacob. Formatting such as bold is approximate.
-
 ```
 **Estimate:** about 105,000 Singapore residents aged 60+ with dementia in 2030 and about 226,000 in 2050, on a basis consistent with the published WiSE counts. If the UN population figures are used without adjustment, the numbers are about 137,000 and 296,000.
 
