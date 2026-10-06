@@ -4,16 +4,18 @@
 Test whether two different AI systems make sound modelling decisions when projecting Singapore dementia cases, scored against our validated model and the MOH benchmark.
 
 ## Systems
-- AI 1: Claude (Anthropic), chat interface
-- AI 2: Gemini (Google), chat interface
+- AI 1: Claude Sonnet 5.5 (Anthropic), claude.ai web app, incognito chat, effort low
+- AI 2: Gemini 3.8 Flash (Google), Google AI Studio, thinking low, Grounding with Google Search off, all other settings default, no system instructions
 
-Exact model version is recorded in each run log.
+Pairing rule: each company's current mid-tier model at low reasoning effort. The match is approximate; no two models from different companies are exactly equivalent. A first Task 1 run used Claude Fable 5.1 (Anthropic's top tier) against Gemini 3.8 Flash; that tier mismatch would confound "system" with "model size", so the pairing was changed. The Fable 5.1 run, and a second Task 1 run of Fable 5.1 at max effort, are kept as extra data points and are not part of the main comparison.
+
+The same pairing and settings are used for every task and the citation audit. Gemini runs use AI Studio rather than the Gemini app because AI Studio shows the exact model and lets search grounding be switched off. Exact model labels and settings are recorded in each run log.
 
 ## Controls
 - Fresh session every run, no memory or prior context
 - Identical prompt, pasted verbatim
 - No web search. The web search toggle could not be found in the claude.ai interface (checked 2026-10-06), so every prompt includes the same sentence after the instruction: "Answer using only your own knowledge and any data in this message; do not search the web." Each run log records whether the system searched anyway.
-- Log date, model version, full response
+- Log date, model version, settings, full response; screenshot of each response kept as the primary record
 - AI never sees our answer or MOH's 152,000 during tasks 1 and 2
 
 ## Data package (tasks 2 and 3 only)
