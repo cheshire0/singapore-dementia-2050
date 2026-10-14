@@ -13,7 +13,7 @@ Main comparison: Claude Sonnet 5.5 vs Gemini 3.8 Flash (each company's mid-tier 
 | Task 2 run 2 (stability) | Done: Sonnet 5.5 (confirmed by Jacob) and Gemini 3.8 Flash (scored on Claude Code's recommendations, Jacob's standing instruction), 2026-10-14 |
 | Task 2 prompt versions V1 and V3, main systems | Sonnet 5.5 V1 and V3 done and confirmed by Jacob, 2026-10-14; Gemini V1 and V3 done (scored on Claude Code's recommendations, Jacob's standing instruction) |
 | Mythos 5.1 extra runs (low, max), Tasks 1 and 2 | Done: Task 1, and Task 2 with prompts V1, V2 and V3, one run each; all scores confirmed by Jacob, 2026-10-14 |
-| Task 3 reverse-engineer MOH | Prompt not written |
+| Task 3 reverse-engineer MOH | Done for both main systems, 2026-10-14 (rubric v1.2; scored on Claude Code's recommendations under Jacob's standing instruction) |
 | Citation audit | Not run |
 | Second-scorer reliability check | Not done |
 
@@ -55,6 +55,15 @@ Component breakdown (D decisions, A arithmetic, F recalled facts; "dropped" mean
 | Mythos 5.1 low (extra), Task 2 V3 guided prompt | | | 60.0 | 24.3 (65 of 67) | 15.0 (5 of 5) |
 | Mythos 5.1 max (extra), Task 2 V3 guided prompt | | | 60.0 | 24.8 (101 of 102) | 9.5 (7 of 11) |
 
+Task 3 (reverse-engineer the published 152,000 for 2030; rubric v1.2, 9 core rows):
+
+| Run | Score | D / 60 | A / 25 | F / 15 |
+|---|---|---|---|---|
+| Gemini 3.8 Flash | 59.8 | 36.7 | 23.1 (37 of 40) | 0.0 (0 of 4) |
+| Claude Sonnet 5.5 | 71.3 | 36.7 | 23.9 (44 of 46) | dropped (0 claims) |
+| Mythos 5.1 low (extra) | 69.5 | 36.7 | 22.4 (35 of 39) | dropped (0 claims) |
+| Mythos 5.1 max (extra) | 92.1 | 53.3 | 23.8 (57 of 60) | 15.0 (4 of 4) |
+
 ## Headline figures
 
 | Run | Task 1, 2050 | Task 2, 2030 | Task 2, 2050 |
@@ -90,6 +99,7 @@ Component breakdown (D decisions, A arithmetic, F recalled facts; "dropped" mean
 10. Gemini 3.8 Flash under V1 (minimal prompt) did the calculation and nothing else: exact constant-rates figures (137,087 and 295,653), no coverage comment, no check against 73,918, no ranges, no mention of change in prevalence. Score 43.5 against 56.9 under V2. Every other system explained its method and caveats under V1 without being asked. On V1 the two main systems score close together (Gemini 43.5, Sonnet 46.9) for opposite reasons: Gemini says too little, Sonnet says more but rescales its headline.
 11. Stability differs by system. Gemini 3.8 Flash's Task 2 run 2 was a near copy of run 1 (same numbers, same ranges, every row scored the same: 56.9 both times). Sonnet 5.5 kept its headline but varied what it discussed (62.0 vs 81.5). Averaging runs as the rubric specifies: Gemini 56.9, Sonnet 71.8 on Task 2 (V2).
 12. Prompt versions on Gemini 3.8 Flash: V1 43.5, V2 56.9 (both runs), V3 76.5. The guided prompt brought out the significance check and kept the official-population headline after the 73,918 check, but its "scenarios" are confidence-interval bounds relabelled as risk scenarios (one wrongly called "2013 reversion"), and it newly over-attributed the 73,918 gap to non-residents. Under V3 the main systems score close (Sonnet 79.8, Gemini 76.5) and split on the headline: Gemini keeps the official population, Sonnet rescales.
+13. Task 3 (reverse-engineer 152,000): Sonnet 71.3, Gemini 59.8. Sonnet reached the team's conclusion unprompted: 152,000 cannot be reproduced from the data with constant or falling rates and implies x2.06 growth against x1.42 from ageing; it said the authors would need to supply their method. Gemini questioned the figure too, but its explanations misread its own numbers (a rise from 2023 rates called a continued decline; ageing alone said to give 11.37% crude prevalence instead of 10.25%), and its main challenge, that 152,000 is a 2050 figure misquoted as 2030, rests on recalled projections that are all misattributed (0 of 4 correct). Both stated the 2013-2023 decline as fact and put the 73,918 gap on non-residents. Mythos 5.1 low (extra, 69.5) reached the same reading as Sonnet (152,000 needs rates near 2013 levels, and 2.06x growth from 73,918 mixes a residents-only base with a total-population projection) and guessed, flagged as unverified, that 152,000 predates WiSE 2023, which the dated sources support. Mythos 5.1 max (extra, 92.1) was the only Task 3 run to place the 73,918 gap in a survey base smaller than the actual resident population, to check the decline against the CIs, and to decompose the x2.06 growth into ageing (x1.42) and three method differences (base, 2013 rates, a smaller 2030 base); its recalled context checked out (4 of 4).
 
 ## Caveats for the report
 
@@ -99,4 +109,5 @@ Component breakdown (D decisions, A arithmetic, F recalled facts; "dropped" mean
 - "Correct" means agreeing with the team's documented modelling decisions, which are themselves judgements.
 - The rubric can reward the right conclusion reached for the wrong reason. Row 5 counts as correct if a response locates the 73,918 gap in a smaller survey base, even when the cause it gives for the smaller base is unsupported; row 10 scores the headline a response chooses, not its reasoning. Wrong causes are recorded in the run logs but do not lower these rows.
 - Same-family bias: the scores were drafted by Claude Code (an Anthropic model) and include Anthropic systems (Sonnet 5.5, Mythos 5.1). Some later rulings (Gemini V1, run 2 and V3) were applied on Claude Code's recommendation under a standing instruction from Jacob rather than confirmed one by one. The blind second-scorer check is the main safeguard and should include at least one Claude and one Gemini run.
+- The rubric under-rewards Task 3's central inference. Sonnet concluded that 152,000 needs age-specific prevalence 11% to 45% above 2023 (x2.06 growth against x1.42 from ageing); Gemini's equivalent arithmetic was read as a continued decline. Both score 36.7 on D because neither the direction of the required change nor the growth multiple is a row. The rubric was not changed after seeing this; the difference is reported in words.
 - The ADI 2006 figure (187,000) could not be checked against the primary report and is excluded from the recall scores.

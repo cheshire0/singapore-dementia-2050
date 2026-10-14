@@ -42,6 +42,15 @@ To compare prompting strategies, Task 2 is run on each main system with three pr
 
 All versions are scored with rubric v1.1. V3 asks directly about several scored issues (rows 3, 4, 5, 8, 10), so in V3 those rows can be correct but are not counted as raised by the AI itself. With one run per version, a difference between versions may be run-to-run noise; compare it with the run 1 vs run 2 difference for V2.
 
+### Task 3 prompt
+
+`prompts/task3_reverse_engineer_moh.txt`. Same research question, no-search sentence and data block as Task 2 (data block identical, checked with `diff`). Added before the instruction: the published estimate, given as "about 74,000 people ... in 2023", taken from the second WiSE study, growing "to 152,000 by 2030", with no method, assumptions or age breakdown. This matches the MOH written parliamentary answer of 4 November 2025, which gives no age range or method.
+
+Design choices:
+- The source is called "a published estimate", not named as MOH, so the systems reason from the data rather than from what they may recall about MOH.
+- The prompt asks only what assumptions would produce 152,000. It does not ask whether they are plausible, so questioning the figure (row 9, core in Task 3) is unprompted.
+- Run once per main system (Sonnet 5.5, Gemini 3.8 Flash) with the same settings as Tasks 1 and 2, fresh session, no follow-ups.
+
 ## Scoring sheet
 Each row scored: correct / defensible / silent error, plus whether the AI raised the issue itself.
 

@@ -1,6 +1,6 @@
 # AI comparison scoring rubric
 
-Status: version 1.1, 2026-10-06. Not yet reviewed by the rest of the group. Frozen from Task 2 run 2 onward: do not change it while scoring. Any later change must be logged under "Change log" with its date, and every run rescored.
+Status: version 1.2, 2026-10-14 (Task 3 applicability; see change log). Version 1.1, 2026-10-06. Not yet reviewed by the rest of the group. Frozen from Task 2 run 2 onward: do not change it while scoring. Any later change must be logged under "Change log" with its date, and every run rescored.
 
 ## Principles
 
@@ -50,9 +50,11 @@ Core rows: always scored for that task. Penalty-only rows: scored only if the re
 | 7. Prevalence vs incidence | core | core | core |
 | 8. Range vs point estimate | core | core | core |
 | 9. Questions MOH 152,000 | penalty-only | penalty-only | core |
-| 10. Headline figure on the official population | not scored | core | core |
+| 10. Headline figure on the official population | not scored | core | not scored (v1.2) |
 
-Row 10 is not scored in Task 1 because there is no published count to rescale to.
+Row 10 is not scored in Task 1 because there is no published count to rescale to, and not in Task 3 (from version 1.2) because Task 3 asks for no projection of its own.
+
+Row 8 in Task 3 (from version 1.2): correct means more than one assumption set that reproduces 152,000 (or a range for a key assumption), with a statement of which is more likely or why it cannot be told; defensible means one assumption set with its uncertainty stated; silent error means one assumption set presented as the answer with no uncertainty.
 
 Reason for the Task 1 split: with no data, a system cannot be expected to know about the survey base, the CIs or the population coverage, so only rows any careful answer must address are core.
 
@@ -168,6 +170,11 @@ Before reporting, a second team member scores at least two runs blind (without s
 - 2026-10-06, version 1.1. Changed after scoring Task 1, before Task 2 run 2 or Task 3 were run:
   - D floor changed from 0 to the number of correct core rows. Under version 1, Gemini 3.8 Flash's Task 1 run scored 0: its one correct row (prevalence vs incidence) was cancelled by two silent errors (range, MOH), which read as "nothing right". Effects: Gemini Task 1 from 0.0 to 25.0; Fable 5.1 low Task 1 from 81.3 to 87.5 (its row 4 silent error no longer offsets its three correct rows; Fable runs withdrawn 2026-10-14; logs in git history up to `b736991`). No Task 2 score changes.
   - Disclose this change in the report alongside row 10.
+
+- 2026-10-14, version 1.2. Changed before any Task 3 response was scored (the first, Gemini 3.8 Flash, had been run but not scored):
+  - Row 10 not scored in Task 3. Task 3 asks which assumptions reproduce 152,000, not for a projection, so the row would score 0 for most responses whatever their quality. Task 3 now has 9 core rows.
+  - Row 8 given a Task 3 reading (range of assumption sets, see "Which rows apply").
+  - Applied on Claude Code's recommendation under Jacob's standing instruction to use its recommendations (2026-10-14). No Task 1 or Task 2 score changes. Disclose alongside the earlier changes.
 
 ## Scoring conventions (clarifications, 2026-10-14)
 
