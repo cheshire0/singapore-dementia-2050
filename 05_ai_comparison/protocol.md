@@ -7,7 +7,7 @@ Test whether two different AI systems make sound modelling decisions when projec
 - AI 1: Claude Sonnet 5.5 (Anthropic), claude.ai web app, incognito chat, effort low
 - AI 2: Gemini 3.8 Flash (Google), Google AI Studio, thinking low, Grounding with Google Search off, all other settings default, no system instructions
 
-Pairing rule: each company's current mid-tier model at low reasoning effort. The match is approximate; no two models from different companies are exactly equivalent. A first Task 1 run used Claude Fable 5.1 (Anthropic's top tier) against Gemini 3.8 Flash; that tier mismatch would confound "system" with "model size", so the pairing was changed. The Fable 5.1 run, and a second Task 1 run of Fable 5.1 at max effort, are kept as extra data points and are not part of the main comparison.
+Pairing rule: each company's current mid-tier model at low reasoning effort. The match is approximate; no two models from different companies are exactly equivalent. A first Task 1 run used Claude Fable 5.1 (Anthropic's top tier) against Gemini 3.8 Flash; that tier mismatch would confound "system" with "model size", so the pairing was changed. Extra top-tier data points (not part of the main comparison) will be run on Mythos 5.1 at low and max effort. The earlier extra runs on Fable 5.1 (low and max effort, Tasks 1 and 2) were withdrawn on 2026-10-14; their logs remain in git history up to `b736991`.
 
 The same pairing and settings are used for every task and the citation audit. Gemini runs use AI Studio rather than the Gemini app because AI Studio shows the exact model and lets search grounding be switched off. Exact model labels and settings are recorded in each run log.
 

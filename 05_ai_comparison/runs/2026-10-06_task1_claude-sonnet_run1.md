@@ -83,7 +83,7 @@ Why this score: Credit for prevalence vs incidence and for giving a caveated ran
 
 - Response length: 209 words.
 - No follow-up messages sent.
-- Pairing run: Sonnet 5.5 (Anthropic mid tier) to match Gemini 3.8 Flash (Google mid tier). See the Fable 5.1 run for the top-tier comparison.
+- Pairing run: Sonnet 5.5 (Anthropic mid tier) to match Gemini 3.8 Flash (Google mid tier). Top-tier comparison: see the Mythos 5.1 extra runs.
 - Knowledge appears to stop before WiSE 2023: cites only the 2013 study.
 - Two factual errors stated as recalled figures (40,000 in 2013; MOH 80,000 by 2030), though the response flags that it is working from memory.
 - Internally inconsistent: 10% of residents 60+ around 2013 would be about 62,500 on SingStat's 625,133, not 40,000.
