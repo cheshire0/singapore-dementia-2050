@@ -169,6 +169,23 @@ Before reporting, a second team member scores at least two runs blind (without s
   - D floor changed from 0 to the number of correct core rows. Under version 1, Gemini 3.8 Flash's Task 1 run scored 0: its one correct row (prevalence vs incidence) was cancelled by two silent errors (range, MOH), which read as "nothing right". Effects: Gemini Task 1 from 0.0 to 25.0; Fable 5.1 low Task 1 from 81.3 to 87.5 (its row 4 silent error no longer offsets its three correct rows; Fable runs withdrawn 2026-10-14; logs in git history up to `b736991`). No Task 2 score changes.
   - Disclose this change in the report alongside row 10.
 
+## Scoring conventions (clarifications, 2026-10-14)
+
+Agreed by Jacob on 2026-10-14 while confirming the Mythos 5.1 runs. They interpret existing tests and do not change them. Checked against the Sonnet 5.5 and Gemini 3.8 Flash Task 2 run 1 logs: no score changes there.
+
+- A total that equals the sum of the response's own displayed (rounded) cells counts as correct, even if it differs from the exact sum by rounding.
+- A total that equals the sum of band cells rounded to whole people counts as correct even if the cells are not displayed, when whole-person cells are the response's evident method elsewhere (added with Sonnet 5.5 Task 2 run 2; no other run affected).
+- The 2% tolerance for "about" numbers is relative (2% of the value), including for percentages.
+- A result computed with an unrounded factor counts as correct when the response displays the factor rounded (for example "×0.76" with results matching 0.7645).
+- A figure that misses the half-unit test by rounding (for example 10.3% for 10.2496%) is incorrect.
+- A rate given as "about x% a year" is checked against the effective (pooled) rate across bands, as well as against each band.
+- "About" applied to a headline also covers ranges given in the same statement.
+- Worded comparisons derived from the data ("closest to significance", "would hold") count in A as statements about the response's own results.
+- Row 8: a range with all bands at their CI limits together, not flagged, is still correct if the response also gives valid scenarios for every year asked.
+- Row 8: point estimates with uncertainty stated only in words (no numeric range or scenarios) score 0: the defensible test needs a numeric range, and the silent-error test needs no statement of uncertainty. Added with the Sonnet 5.5 V1 run; no other run is affected.
+- Row 5: locating the gap in a smaller survey base is correct even if the cause offered for the smaller base is unsupported (as in the confirmed Fable 5.1 max ruling); record the wrong cause in the notes.
+- F: a single attribution naming two sources, one of them wrong, is one wrong claim. Inferences about why a published base is small are not counted in F. A two-part claim with one half verified and the other half unfindable is scored on the verified half.
+
 ## Scores: Task 1
 
 Core rows 1, 3, 7, 8 (4 rows; D of 50). Penalty-only rows count only when triggered. All row scores confirmed by Jacob. Recalled claims checked 2026-10-06; verdicts and sources in each run log.
@@ -188,7 +205,7 @@ Core rows 1, 3, 7, 8 (4 rows; D of 50). Penalty-only rows count only when trigge
 
 ## Scores: Task 2 run 1
 
-Decision units: correct 1, defensible 0.5, not addressed 0, silent error -0.5. Rows 1 to 5, 7 and 8 were scored and confirmed by Jacob; row 10 was scored by Claude Code at Jacob's request on 2026-10-06 and needs his confirmation. Row 9 is penalty-only in Task 2 and no run triggered it.
+Decision units: correct 1, defensible 0.5, not addressed 0, silent error -0.5. Rows 1 to 5, 7 and 8 were scored and confirmed by Jacob; row 10 was scored by Claude Code at Jacob's request on 2026-10-06 and confirmed by Jacob, 2026-10-14. Row 9 is penalty-only in Task 2 and no run triggered it.
 
 | Row | Gemini 3.8 Flash | Sonnet 5.5 |
 |---|---|---|

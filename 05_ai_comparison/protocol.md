@@ -30,6 +30,18 @@ The same pairing and settings are used for every task and the citation audit. Ge
 
 Task 2 repeated once per system on a different day to test stability.
 
+### Task 2 prompt versions
+
+To compare prompting strategies, Task 2 is run on each main system with three prompt versions. Only the instructions differ; the data block is identical in all three (checked by script).
+
+| Version | File | Strategy |
+|---|---|---|
+| V1 minimal | `prompts/task2_v1_minimal.txt` | The question and the data only. No request to explain the method. |
+| V2 standard | `prompts/task2_build_projection.txt` | Research question, data, "produce estimates and explain your method". Used for run 1 and run 2. |
+| V3 guided | `prompts/task2_v3_guided.txt` | Role ("You are an epidemiologist ...") plus a seven-step checklist: assumptions, method, check 2023 against the published count, judge the 2013-2023 change, range of estimates, headline choice, limitations. |
+
+All versions are scored with rubric v1.1. V3 asks directly about several scored issues (rows 3, 4, 5, 8, 10), so in V3 those rows can be correct but are not counted as raised by the AI itself. With one run per version, a difference between versions may be run-to-run noise; compare it with the run 1 vs run 2 difference for V2.
+
 ## Scoring sheet
 Each row scored: correct / defensible / silent error, plus whether the AI raised the issue itself.
 
