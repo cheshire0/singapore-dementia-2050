@@ -14,7 +14,7 @@ Main comparison: Claude Sonnet 5.5 vs Gemini 3.8 Flash (each company's mid-tier 
 | Task 2 prompt versions V1 and V3, main systems | Sonnet 5.5 V1 and V3 done and confirmed by Jacob, 2026-10-14; Gemini V1 and V3 done (scored on Claude Code's recommendations, Jacob's standing instruction) |
 | Mythos 5.1 extra runs (low, max), Tasks 1 and 2 | Done: Task 1, and Task 2 with prompts V1, V2 and V3, one run each; all scores confirmed by Jacob, 2026-10-14 |
 | Task 3 reverse-engineer MOH | Done for both main systems, 2026-10-14 (rubric v1.2; scored on Claude Code's recommendations under Jacob's standing instruction) |
-| Citation audit | Not run |
+| Citation audit | Done for both main systems and both Mythos runs, 2026-10-14 (scored on Claude Code's recommendations under Jacob's standing instruction) |
 | Second-scorer reliability check | Not done |
 
 ## Scores
@@ -64,6 +64,22 @@ Task 3 (reverse-engineer the published 152,000 for 2030; rubric v1.2, 9 core row
 | Mythos 5.1 low (extra) | 69.5 | 36.7 | 22.4 (35 of 39) | dropped (0 claims) |
 | Mythos 5.1 max (extra) | 92.1 | 53.3 | 23.8 (57 of 60) | 15.0 (4 of 4) |
 
+Citation audit (five figures: WiSE 2023 prevalence for three age bands, residents aged 60+ in 2023, relative risk of dementia for inactivity; score = 100 x correct / 5; volunteered extras checked but not scored):
+
+| Run | Score | Correct | "I don't know" | Wrong | Volunteered extras correct |
+|---|---|---|---|---|---|
+| Gemini 3.8 Flash | 40 | 2 | 3 | 0 | 2 of 4 |
+| Claude Sonnet 5.5 | 20 | 1 | 4 | 0 | 1 of 3 |
+| Mythos 5.1 low (extra) | 40 | 2 | 3 | 0 | 7 of 10 |
+| Mythos 5.1 max (extra) | 20 | 1 | 4 | 0 | 15 of 19 |
+
+System scores (rubric: plain mean of Task 1, Task 2 averaged over runs 1 and 2 (V2 prompt), Task 3 and the citation audit; V1 and V3 runs not included):
+
+| System | Task 1 | Task 2 (mean of runs) | Task 3 | Citation audit | System score |
+|---|---|---|---|---|---|
+| Gemini 3.8 Flash | 25.0 | 56.9 | 59.8 | 40 | 45.4 |
+| Claude Sonnet 5.5 | 51.3 | 71.8 | 71.3 | 20 | 53.6 |
+
 ## Headline figures
 
 | Run | Task 1, 2050 | Task 2, 2030 | Task 2, 2050 |
@@ -100,6 +116,7 @@ Task 3 (reverse-engineer the published 152,000 for 2030; rubric v1.2, 9 core row
 11. Stability differs by system. Gemini 3.8 Flash's Task 2 run 2 was a near copy of run 1 (same numbers, same ranges, every row scored the same: 56.9 both times). Sonnet 5.5 kept its headline but varied what it discussed (62.0 vs 81.5). Averaging runs as the rubric specifies: Gemini 56.9, Sonnet 71.8 on Task 2 (V2).
 12. Prompt versions on Gemini 3.8 Flash: V1 43.5, V2 56.9 (both runs), V3 76.5. The guided prompt brought out the significance check and kept the official-population headline after the 73,918 check, but its "scenarios" are confidence-interval bounds relabelled as risk scenarios (one wrongly called "2013 reversion"), and it newly over-attributed the 73,918 gap to non-residents. Under V3 the main systems score close (Sonnet 79.8, Gemini 76.5) and split on the headline: Gemini keeps the official population, Sonnet rescales.
 13. Task 3 (reverse-engineer 152,000): Sonnet 71.3, Gemini 59.8. Sonnet reached the team's conclusion unprompted: 152,000 cannot be reproduced from the data with constant or falling rates and implies x2.06 growth against x1.42 from ageing; it said the authors would need to supply their method. Gemini questioned the figure too, but its explanations misread its own numbers (a rise from 2023 rates called a continued decline; ageing alone said to give 11.37% crude prevalence instead of 10.25%), and its main challenge, that 152,000 is a 2050 figure misquoted as 2030, rests on recalled projections that are all misattributed (0 of 4 correct). Both stated the 2013-2023 decline as fact and put the 73,918 gap on non-residents. Mythos 5.1 low (extra, 69.5) reached the same reading as Sonnet (152,000 needs rates near 2013 levels, and 2.06x growth from 73,918 mixes a residents-only base with a total-population projection) and guessed, flagged as unverified, that 152,000 predates WiSE 2023, which the dated sources support. Mythos 5.1 max (extra, 92.1) was the only Task 3 run to place the 73,918 gap in a survey base smaller than the actual resident population, to check the decline against the CIs, and to decompose the x2.06 growth into ageing (x1.42) and three method differences (base, 2013 rates, a smaller 2030 base); its recalled context checked out (4 of 4).
+14. Citation audit: no system knew the WiSE 2023 band prevalences and all four declined rather than guess. All four gave 1.4 from the Lancet Commission (2020, or 2017 for Mythos max) for the inactivity relative risk, which is correct for that source. None gave a wrong scored figure; scores (Gemini 40, Sonnet 20, Mythos low 40, Mythos max 20) separate them only by whether they committed to a population figure. Errors appear in the volunteered detail instead: Gemini added a table number and a confidence interval that are not in the sources it named; Sonnet placed WiSE's 8.8% in a "2015 round"; both Mythos runs said the 2024 Commission kept 1.4 (it moved to 1.2, citing Iso-Markku et al. 2022, the paper the team's RR of 1.25 comes from).
 
 ## Caveats for the report
 
@@ -110,4 +127,5 @@ Task 3 (reverse-engineer the published 152,000 for 2030; rubric v1.2, 9 core row
 - The rubric can reward the right conclusion reached for the wrong reason. Row 5 counts as correct if a response locates the 73,918 gap in a smaller survey base, even when the cause it gives for the smaller base is unsupported; row 10 scores the headline a response chooses, not its reasoning. Wrong causes are recorded in the run logs but do not lower these rows.
 - Same-family bias: the scores were drafted by Claude Code (an Anthropic model) and include Anthropic systems (Sonnet 5.5, Mythos 5.1). Some later rulings (Gemini V1, run 2 and V3) were applied on Claude Code's recommendation under a standing instruction from Jacob rather than confirmed one by one. The blind second-scorer check is the main safeguard and should include at least one Claude and one Gemini run.
 - The rubric under-rewards Task 3's central inference. Sonnet concluded that 152,000 needs age-specific prevalence 11% to 45% above 2023 (x2.06 growth against x1.42 from ageing); Gemini's equivalent arithmetic was read as a continued decline. Both score 36.7 on D because neither the direction of the required change nor the growth multiple is a row. The rubric was not changed after seeing this; the difference is reported in words.
+- The citation audit rewards answering over declining: every system declined the WiSE band figures and none gave a wrong scored figure, so the scores mostly measure willingness to answer. Report the "I don't know" and wrong columns alongside the score.
 - The ADI 2006 figure (187,000) could not be checked against the primary report and is excluded from the recall scores.

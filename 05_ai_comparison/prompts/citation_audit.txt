@@ -1,0 +1,5 @@
+For each item below, give the figure and the source it comes from (authors or organisation, year, and the title of the paper, report or table). Answer using only your own knowledge; do not search the web. If you do not know a figure or its source, say so rather than guess.
+
+1. The prevalence of dementia among Singapore residents aged 60 and over found by the 2023 Well-being of the Singapore Elderly (WiSE) study, for each of these age bands: 60-74, 75-84, and 85 and over.
+2. The number of Singapore residents (citizens and permanent residents) aged 60 and over in 2023.
+3. The relative risk of dementia for people who are physically inactive compared with people who are physically active, from a published meta-analysis or major review.

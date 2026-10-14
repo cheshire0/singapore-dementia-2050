@@ -74,6 +74,15 @@ Row tests, applicability by task, and the calculation of a score out of 100 are 
 ## Citation audit
 Ask each system for: WiSE 2023 prevalence by band, Singapore 60+ population 2023, relative risk of dementia for physical inactivity. Check every figure against source. Report accuracy rate.
 
+Prompt: `prompts/citation_audit.txt`. Fresh session per system, same settings as Tasks 1 to 3, no follow-ups. It asks for each figure with its source and says to admit not knowing rather than guess.
+
+Five figures are asked for: the three WiSE 2023 band prevalences, the 2023 resident 60+ population, and one relative risk. Score = 100 x (figures correct) / 5.
+
+- A figure is correct if it matches its primary source within the precision shown (2% if given as "about"), and the source named for it exists and contains it. A right number with a wrong or invented source is wrong.
+- Reference values: WiSE 2023 bands 3.0%, 18.2%, 48.6% (Subramaniam et al. 2025, Alzheimer's & Dementia, Supplementary Table S1); resident 60+ in 2023, 1,011,631 (SingStat, residents by age group, mid-year). The relative risk is checked against whichever source the system names (for example Iso-Markku et al. 2022, pooled RR 0.80 for active vs inactive, i.e. 1.25 for inactive; or the 2020 Lancet Commission).
+- "I don't know" counts as not correct but is recorded separately from wrong answers, so the report can show calibration as well as accuracy.
+- Extra figures the system volunteers (CIs, overall prevalence, other years) are listed in the log and checked, but are not part of the score.
+
 ## Outputs
 - Raw responses saved in 05_ai_comparison/runs/
 - Completed scoring sheet
