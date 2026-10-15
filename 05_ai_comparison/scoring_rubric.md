@@ -1,6 +1,6 @@
 # AI comparison scoring rubric
 
-Status: version 1.2, 2026-10-14 (Task 3 applicability; see change log). Version 1.1, 2026-10-06. Not yet reviewed by the rest of the group. Frozen from Task 2 run 2 onward: do not change it while scoring. Any later change must be logged under "Change log" with its date, and every run rescored.
+Status: version 1.3, 2026-10-15 (Task 4 rows 11 to 16, written before any Task 4 run; see change log). Version 1.2, 2026-10-14. Version 1.1, 2026-10-06. Not yet reviewed by the rest of the group. Frozen from Task 2 run 2 onward: do not change it while scoring. Any later change must be logged under "Change log" with its date, and every run rescored.
 
 ## Principles
 
@@ -12,11 +12,11 @@ Status: version 1.2, 2026-10-14 (Task 3 applicability; see change log). Version 
 
 ## Components and weights
 
-| Component | Task 1 | Task 2 | Task 3 |
-|---|---|---|---|
-| D. Modelling decisions | 50 | 60 | 60 |
-| A. Arithmetic accuracy | n/a | 25 | 25 |
-| F. Factual accuracy (recalled claims) | 50 | 15 | 15 |
+| Component | Task 1 | Task 2 | Task 3 | Task 4 |
+|---|---|---|---|---|
+| D. Modelling decisions | 50 | 60 | 60 | 60 |
+| A. Arithmetic accuracy | n/a | 25 | 25 | 25 |
+| F. Factual accuracy (recalled claims) | 50 | 15 | 15 | 15 |
 
 If a component has nothing to check in a run (for example no recalled claims in Task 2), it is dropped and the score is rescaled:
 
@@ -39,18 +39,26 @@ The citation audit is scored separately as 100 x (figures correct) / (figures as
 
 Core rows: always scored for that task. Penalty-only rows: scored only if the response meets the silent error test (then -0.5); otherwise ignored. Penalty-only rows never add points.
 
-| Row | Task 1 | Task 2 | Task 3 |
-|---|---|---|---|
-| 1. Age-specific vs flat rate | core | core | core |
-| 2. Residents vs total population | penalty-only | core | core |
-| 3. Prevalence flat vs changing | core | core | core |
-| 4. 2013-2023 decline not significant | penalty-only | core | core |
-| 5. WiSE 73,918 on a smaller base | penalty-only | core | core |
-| 6. Diagnostic criteria (10/66) | penalty-only | core | core |
-| 7. Prevalence vs incidence | core | core | core |
-| 8. Range vs point estimate | core | core | core |
-| 9. Questions MOH 152,000 | penalty-only | penalty-only | core |
-| 10. Headline figure on the official population | not scored | core | not scored (v1.2) |
+| Row | Task 1 | Task 2 | Task 3 | Task 4 |
+|---|---|---|---|---|
+| 1. Age-specific vs flat rate | core | core | core | core |
+| 2. Residents vs total population | penalty-only | core | core | core |
+| 3. Prevalence flat vs changing | core | core | core | core |
+| 4. 2013-2023 decline not significant | penalty-only | core | core | core |
+| 5. WiSE 73,918 on a smaller base | penalty-only | core | core | core |
+| 6. Diagnostic criteria (10/66) | penalty-only | core | core | core |
+| 7. Prevalence vs incidence | core | core | core | core |
+| 8. Range vs point estimate | core | core | core | core |
+| 9. Questions MOH 152,000 | penalty-only | penalty-only | core | penalty-only |
+| 10. Headline figure on the official population | not scored | core | not scored (v1.2) | core |
+| 11. Relative risk and its source | not scored | not scored | not scored | core |
+| 12. Avoidable-case method | not scored | not scored | not scored | core |
+| 13. Inactivity data stops at 74 | not scored | not scored | not scored | core |
+| 14. Association vs causation | not scored | not scored | not scored | core |
+| 15. Dwelling and region: no prevalence data | not scored | not scored | not scored | core |
+| 16. Sex and ethnicity: all-ages rates, no projections | not scored | not scored | not scored | core |
+
+Task 4 has 15 core rows. Rows 1 to 10 are read as in Task 2, applied to the overall projection. Report the D units for rows 11 to 16 separately as well ("Task 4 new rows"), so the new material can be compared without the Task 2 rows diluting it.
 
 Row 10 is not scored in Task 1 because there is no published count to rescale to, and not in Task 3 (from version 1.2) because Task 3 asks for no projection of its own.
 
@@ -116,6 +124,39 @@ The floor means silent errors (on core or penalty-only rows) can never take D be
    - Defensible: recommends figures on the official population without ever considering the mismatch, or recommends figures rescaled to 73,918 while stating they are probably too low.
    - Silent error: presents figures rescaled to 73,918 as the answer without stating they are probably too low.
 
+11. Relative risk and its source (Task 4)
+   - Correct: states the relative risk (or equivalent effect size) of dementia for physical inactivity that it uses, and names a source that exists and contains that figure for that comparison. The source is checked under F; a source that fails the F check means this row is not correct.
+   - Defensible: states the figure it uses but gives no source or only a vague one ("studies suggest"), or names a correct source but uses its figure for a different comparison without saying so (for example a midlife figure applied to people aged 60+).
+   - Silent error: estimates avoidable cases without stating any effect size, or names a source that does not contain the figure used.
+   - Any figure in the published range is acceptable (for example Iso-Markku et al. 2022, RR 1.25 for inactive vs active; 2020 Lancet Commission, RR 1.4 for late-life inactivity; 2024 Lancet Commission, RR 1.2). The row tests sourcing, not agreement with the team's 1.25.
+
+12. Avoidable-case method (Task 4)
+   - Correct: derives the exposed share as insufficiently active (100% - 80.3% = 19.7% at 60-74), combines it with the relative risk in an attributable-fraction formula (PAF = P(RR-1) / (1 + P(RR-1)), or an equivalent), and for the 15% scenario uses the reduced exposure (potential impact fraction; for a 15% relative cut this equals 0.15 x PAF), applied to its own projected case counts.
+   - Defensible: correct structure with a stated simplification (for example P x (RR-1) without the denominator, called an approximation), or gives only the full PAF (all inactivity removed) without the 15% scenario.
+   - Silent error: takes 80.3% as the exposed share; treats a 15% cut in inactivity as a 15% (or RR-sized) cut in cases; applies the relative risk to all cases; or gives avoidable cases with no traceable method.
+   - Reference (team, RR 1.25): PAF 4.69%; 15% scenario 0.704%, which is 965 cases in 2030 and 2,082 in 2050 at constant 2023 rates. With RR 1.4: PAF 7.30%, 15% scenario 1.096%. For A, recompute with the system's own figures and method.
+
+13. Inactivity data stops at 74 (Task 4)
+   - Correct: notes that the physical activity data covers only ages 60-74 among older adults, states the assumption it makes for 75 and over (same rate, a higher rate, or 60-74 only), and states which way that assumption moves the result.
+   - Defensible: states the assumption for 75+ but not its direction, or restricts the calculation to 60-74 without saying what is left out.
+   - Silent error: applies the 60-74 rate to everyone aged 60+ (or to all cases) with no comment.
+
+14. Association vs causation (Task 4)
+   - Correct: says the avoidable-case figure assumes the relative risk is causal, and names a reason it may not be (reverse causation, since early dementia reduces activity; confounding), or a reason the effect would not appear by 2030 or 2050 (time lag between activity change and dementia prevalence).
+   - Defensible: a general caveat ("observational data", "estimates are uncertain") not linked to the avoidable-case figure.
+   - Silent error: presents avoidable cases as a definite result of reducing inactivity with no caveat.
+
+15. Dwelling and region: no prevalence data (Task 4)
+   - Correct: states that the data gives no dementia prevalence by type of dwelling or by region, and either declines those breakdowns or gives them only as the distribution of the population at risk, or as cases under a stated assumption (for example the same age-specific rates everywhere), labelled as such.
+   - Defensible: gives a dwelling or region breakdown under an assumption it states, without saying the data has no prevalence by dwelling or region; or covers one of the two (dwelling or region) correctly and omits the other.
+   - Silent error: presents dementia counts or rates by dwelling or region as if measured, or uses rates for them that are not in the data without stating an assumption.
+
+16. Sex and ethnicity: all-ages rates, no projections (Task 4)
+   - Correct: makes both points: (a) the sex and ethnicity prevalences are for all ages 60+ combined, so differences between groups partly reflect age (for example women are older on average), and the response either adjusts for age or says this; (b) the data has no projection of the population by sex or ethnicity to 2030 or 2050 (and the ethnicity counts are from 2020), so any future split rests on a stated assumption (for example shares held at 2020 or 2023).
+   - Defensible: makes one of the two points.
+   - Silent error: applies the all-ages sex or ethnicity rates to group populations and projects them to 2030 or 2050 with neither point made.
+   - Rows 15 and 16 test the team's documented position: the data supports a 2023 description of who is at risk, not a projection by subgroup.
+
 ## A. Arithmetic accuracy
 
 List every number the system derived from the prompt data (not numbers copied from the prompt). Count each distinct number once. Statements about its own results ("85+ is about 70% of 2050 cases") count.
@@ -144,7 +185,7 @@ Every verdict needs the source reference in the run log. A claim not yet checked
 
 ## System score
 
-Score each task, average runs within a task (Task 2 run 1 and run 2), then take the plain mean of Task 1, Task 2, Task 3 and the citation audit. Report the Task 2 run 1 vs run 2 difference alongside as the stability measure; it is not part of the score.
+Score each task, average runs within a task (Task 2 run 1 and run 2), then take the plain mean of Task 1, Task 2, Task 3 and the citation audit. Task 4 (added in version 1.3) is reported as a separate score, averaged over its runs, and is not added to the system score, so the system scores already reported do not change. Report the Task 2 run 1 vs run 2 difference alongside as the stability measure; it is not part of the score.
 
 ## The "Raised itself?" column
 
@@ -175,6 +216,11 @@ Before reporting, a second team member scores at least two runs blind (without s
   - Row 10 not scored in Task 3. Task 3 asks which assumptions reproduce 152,000, not for a projection, so the row would score 0 for most responses whatever their quality. Task 3 now has 9 core rows.
   - Row 8 given a Task 3 reading (range of assumption sets, see "Which rows apply").
   - Applied on Claude Code's recommendation under Jacob's standing instruction to use its recommendations (2026-10-14). No Task 1 or Task 2 score changes. Disclose alongside the earlier changes.
+
+- 2026-10-15, version 1.3. Written before any Task 4 run (Task 4 prompt committed in `a9a15f1`):
+  - Task 4 column added. Rows 1 to 10 apply as in Task 2, except row 9 (penalty-only). New core rows 11 to 16 for physical activity and subgroups. Weights as Task 2 (60/25/15).
+  - Task 4 reported separately, not added to the system score.
+  - No change to rows 1 to 10 or to any Task 1 to 3 score. Drafted by Claude Code; disclose alongside the earlier changes.
 
 ## Scoring conventions (clarifications, 2026-10-14)
 
