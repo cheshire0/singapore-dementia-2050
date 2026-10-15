@@ -1,0 +1,93 @@
+I am working on this research question: How many Singapore residents aged 60 and over will have dementia in 2030 and in 2050, and how many of those cases could be avoided by reducing physical inactivity?
+
+Using the data below:
+1. Produce estimates for 2030 and 2050.
+2. Estimate how many of those cases could be avoided if the share of older adults who are insufficiently active fell by 15% in relative terms.
+3. Break your estimates down by sex, ethnicity, type of dwelling and region.
+
+Explain your method and what drives your results. If you use any figure that is not in the data, say what it is and where it comes from. Answer using only your own knowledge and any data in this message; do not search the web.
+
+DATA
+
+1. Population of Singapore by age band
+Source: United Nations World Population Prospects 2024, Singapore, both sexes combined.
+
+| Year | 60-74 | 75-84 | 85+ | Type |
+|---|---|---|---|---|
+| 2023 | 789,711 | 208,640 | 72,078 | Estimates |
+| 2030 | 900,014 | 337,242 | 100,223 | Medium variant |
+| 2050 | 1,244,081 | 541,417 | 328,792 | Medium variant |
+
+2. Dementia prevalence from the Well-being of the Singapore Elderly (WiSE) study
+Source: Institute of Mental Health, Singapore. Two nationally representative cross-sectional surveys of Singapore residents (citizens and permanent residents) aged 60 and over, in 2013 and 2023. Dementia diagnosed using the 10/66 criteria.
+
+| Age band | 2013 prevalence | 2023 prevalence (95% CI) |
+|---|---|---|
+| 60-74 | 3.4% | 3.0% (1.9 to 4.7) |
+| 75-84 | 21.6% | 18.2% (13.2 to 24.5) |
+| 85+ | 56.2% | 48.6% (38.8 to 58.6) |
+| All aged 60+ | 10.0% | 8.8% |
+
+Number of people aged 60+ with dementia as published by the study: 51,934 in 2013, 73,918 in 2023.
+
+3. Dementia prevalence in 2023 by sex and by ethnicity, from the same WiSE study
+Residents aged 60 and over, all ages combined (not broken down by age band).
+
+| Group | 2023 prevalence (95% CI) |
+|---|---|
+| Men | 6.3% (4.5 to 8.7) |
+| Women | 11.1% (8.8 to 13.9) |
+| Chinese | 8.7% (6.9 to 10.9) |
+| Malay | 8.9% (7.2 to 10.9) |
+| Indian | 9.6% (7.5 to 12.3) |
+| Others | 10.8% (6.3 to 17.8) |
+
+4. Physical activity
+Source: Ministry of Health, National Population Health Survey 2024. Share of residents meeting the recommended level of physical activity. The survey covers residents aged 18 to 74.
+
+| Age band | All | Men | Women |
+|---|---|---|---|
+| 60-74 | 80.3% | 79.7% | 80.9% |
+
+5. Residents aged 60 and over by type of dwelling, 2023
+Source: Department of Statistics Singapore, Singapore residents by age group and type of dwelling.
+
+| Type of dwelling | 60-74 | 75-84 | 85+ |
+|---|---|---|---|
+| Condominiums & Other Apartments | 76,132 | 16,789 | 4,542 |
+| HDB 1- And 2-Room Flats | 54,093 | 16,389 | 4,879 |
+| HDB 3-Room Flats | 131,424 | 42,376 | 13,208 |
+| HDB 4-Room Flats | 242,307 | 57,559 | 16,888 |
+| HDB 5-Room And Executive Flats | 186,533 | 41,011 | 11,703 |
+| Landed Properties | 51,270 | 16,877 | 7,095 |
+| Other Types Of Dwelling | 8,960 | 6,167 | 5,429 |
+
+6. Residents aged 60 and over by planning region and sex, 2023
+Source: Department of Statistics Singapore, Singapore residents by planning region, age group and sex.
+
+| Region | Sex | 60-74 | 75-84 | 85+ |
+|---|---|---|---|---|
+| Central Region | Male | 87,610 | 27,030 | 8,660 |
+| Central Region | Female | 93,860 | 36,030 | 15,410 |
+| East Region | Male | 68,200 | 14,880 | 3,660 |
+| East Region | Female | 71,230 | 18,750 | 7,020 |
+| North Region | Male | 48,110 | 8,400 | 1,860 |
+| North Region | Female | 47,670 | 10,700 | 3,440 |
+| North-East Region | Male | 79,230 | 18,810 | 4,440 |
+| North-East Region | Female | 84,700 | 24,000 | 8,490 |
+| West Region | Male | 84,680 | 17,700 | 3,820 |
+| West Region | Female | 85,450 | 20,890 | 6,950 |
+
+7. Residents aged 60 and over by ethnic group and sex, 2020
+Source: Department of Statistics Singapore, Census of Population 2020, resident population by single year of age, ethnic group and sex.
+
+| Ethnic group | Sex | 60-74 | 75-84 | 85+ |
+|---|---|---|---|---|
+| Chinese | Males | 270,512 | 59,200 | 16,316 |
+| Chinese | Females | 282,928 | 76,125 | 32,891 |
+| Malays | Males | 35,740 | 5,162 | 1,579 |
+| Malays | Females | 38,723 | 7,100 | 2,619 |
+| Indians | Males | 22,490 | 3,356 | 1,634 |
+| Indians | Females | 22,639 | 4,756 | 1,643 |
+| Others | Males | 6,157 | 941 | 305 |
+| Others | Females | 4,841 | 863 | 474 |
