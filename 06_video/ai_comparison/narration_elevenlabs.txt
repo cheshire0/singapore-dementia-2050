@@ -1,0 +1,43 @@
+[calm, measured documentary narrator] We put the same questions to two AI systems, word for word.
+[deliberate] Then we checked every answer against the original source.
+
+[matter-of-fact] The candidates: Claude Sonnet and Gemini Flash, each company's mid-tier model.
+[steady, listing] Same conditions every time: a new chat, the identical prompt, no web search, and no sight of our answer.
+
+[brisk] Question one, from memory.
+[dry] Gemini gave the Ministry of Health's 2030 projection as its answer for 2050.
+[dry, slightly incredulous] Sonnet credited the Ministry with eighty thousand by 2030, and didn't seem to know the 2023 survey existed.
+
+[brisk] Question two came with our data.
+[clear, precise] Both did the arithmetic perfectly: 137,087 people in 2030, and 295,653 in 2050.
+[quietly impressed] Exactly our figures.
+
+[serious, slower] The difference was judgement.
+[matter-of-fact] Gemini never checked its method against the published 2023 count.
+[thoughtful] Sonnet did, blamed the gap on non-residents, and cut its answer by about a quarter.
+[firm, explaining] The real cause is the survey's own base, about seventeen per cent smaller than the resident population.
+
+[measured] Eight days later we set the same question again.
+[dry] Gemini's answer came back almost word for word.
+[building emphasis] Sonnet's score moved nineteen and a half points, more than the gap between the two systems.
+[slow, deliberate] One run proves very little.
+
+[neutral] A more detailed prompt raised both scores.
+[pointed] But under every prompt, Sonnet gave the same rescaled answer.
+[measured] The checklist got them to cover the right points.
+[quiet, firm] It didn't get them to make the right call.
+
+[curious] Question three: what would it take to reach the official 152,000 for 2030?
+[clear] Ageing alone gives growth of 1.42 times.
+[emphatic] 152,000 needs 2.06.
+[matter-of-fact] Sonnet concluded it couldn't be reproduced from the data.
+[dry, wry] Gemini found the right numbers, then described a rise as a decline.
+
+[warm, fair] Asked to cite their figures, both mostly said they didn't know, which is honest.
+[pointed] The mistakes were in the extra detail: a table number and a confidence interval that aren't in the source.
+
+[reflective, measured] Sonnet finished ahead overall, but the lesson is the same for both.
+[crisp] Reliable at arithmetic.
+[crisp] Unreliable at judgement and recall.
+[slower, serious] And the most damaging errors were the confident ones.
+[calm, conclusive] Checking against the original source caught a mistake in every system we tested.
