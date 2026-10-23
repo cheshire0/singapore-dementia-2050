@@ -6,7 +6,7 @@ HS1502 group video: 10 minutes maximum, 15% of the module, half the grade on pro
 
 **Due: Friday 6 November.** Work in the shared Google Doc, Video Script tab. This file is the final copy, updated from the Doc.
 
-1. Find your section in the Google Doc (the table below says which one is yours and how long it should be).
+1. Find your section in the Video Script tab of the Google Doc (the table below says which one is yours and how long it should be).
 2. Write the **narration**: the exact words a voice will say, one sentence per line. About **150 words per minute** of video, so 1:30 is roughly 220 words. Read it aloud with a timer to check.
 3. Next to each part of the narration, write what should be **on screen** while it is said: which chart, table, number or picture, and what to point at. A plain description is enough ("bar chart of 60+ population in 2023, 2030, 2050, the 2050 bar highlighted"). Sketches or screenshots of your own charts are welcome.
 4. List the **source** of every number you mention (paper, table, page or dataset).
@@ -20,13 +20,13 @@ If anything is unclear, ask in the group chat before the deadline rather than le
 
 | # | Section | Owner | Length | About |
 |---|---|---|---|---|
-| 0 | Opening | TBD | 0:30 | 75 words |
+| 0 | Opening | Jacob | 0:30 | 75 words |
 | 1 | Demographics | Hong Ming | 1:30 | 220 words |
 | 2 | Dementia prevalence | James | 1:30 | 220 words |
 | 3 | Projection and validation | Lili | 1:45 | 260 words |
 | 4 | Physical activity | Zoe | 1:30 | 220 words |
 | 5 | AI comparison | Jacob | 2:33 | done |
-| 6 | Closing | TBD | 0:30 | 75 words |
+| 6 | Closing | Jacob | 0:30 | 75 words |
 | | **Total** | | **9:48** | |
 
 ## Rules for everyone
@@ -65,7 +65,7 @@ AI tools used (if any):
 
 ## 0. Opening
 
-**Owner:** TBD (Jacob to assign) · **Length:** 0:30
+**Owner:** Jacob · **Length:** 0:30
 
 Could cover: the research question (how many Singapore residents aged 60+ will have dementia in 2030 and 2050), and why it matters.
 
@@ -101,7 +101,7 @@ Full script: [`ai_comparison/script.md`](ai_comparison/script.md).
 
 ## 6. Closing
 
-**Owner:** TBD (Jacob to assign) · **Length:** 0:30
+**Owner:** Jacob · **Length:** 0:30
 
 Could cover: the headline numbers, the main limitations, and what the results mean.
 
